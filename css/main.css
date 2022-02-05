@@ -215,8 +215,8 @@ img {
   height: 50px;
 }
 
-.order-button:hover .button, .order-button:focus .button {
-  color: #188CE8;
+.order-title:hover .button {
+  color: red;
 }
 
 .button-text {
