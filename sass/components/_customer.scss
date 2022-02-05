@@ -12,10 +12,11 @@
   
 }
 .customer-list{
-  display: flex;
+  @include desk {display: flex;
   justify-content: center;
   margin-left: -30px;
-
+}
+  
 }
 .customer-list__item{
   display: flex;

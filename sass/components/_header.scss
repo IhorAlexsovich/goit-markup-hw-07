@@ -13,17 +13,30 @@
   background: var( --other-color );
 }
 .header__container{
-  
+   @media screen and (max-width:767px) {
+     height: 60px;
+     
+
+  }
   @extend %flex;
   
 }
+
+.site-list{
+  @media screen and (max-width:767px) {
+    display: none;
+  }
+}
 .connect{
+  @media screen and (max-width:767px) {
+    display: none;
+  }
   margin-left: auto;
 }
-.site__list--item:not(:last-child){
+.site-list__item:not(:last-child){
   margin-right: 50px;
 }
-.site__list{
+.site-list{
   font-weight: 500;
   font-size: 14px;
   letter-spacing: 0.02em;
@@ -74,20 +87,20 @@
 
 
 
-.site__list--item{ &:hover, &:focus{
+.site-list__item{ &:hover, &:focus{
   .link{
   color: var( --accent-color );}
   }
 }
 
 
-.site__list--link{
+.site-list__link{
   position: relative;
    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   padding: 32px 0;
 }
-.site__list--link.active::after{
+.site-list__link.active::after{
   display: flex;
   content: '';
   position:absolute ;
